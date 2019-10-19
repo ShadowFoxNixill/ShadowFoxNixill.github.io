@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+  <title>ShadowFoxNixill&apos;s redirect page</title>
+  <style>
+    body {
+      background-color: #2f0f0f;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+
+    div {
+      width: 600px;
+      margin: 5em auto;
+      padding: 2em;
+      background-color: #ffcfcf;
+      border-radius: 0.5em;
+      box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+      color: #100000;
+    }
+
+    a:link,
+    a:visited {
+      color: #8f3848;
+      text-decoration: none;
+    }
+
+    @media (max-width: 700px) {
+      div {
+        margin: 0 auto;
+        width: auto;
+      }
+    }
+  </style>
+  <script>
+    var hname = window.location.hostname;
+    var redir = window.location.replace;
+    if (hname == "twitter.nixill.net") {
+      redir("https://twitter.com/ShadowFoxNixill");
+    } else if (hname == "github.nixill.net") {
+      redir("https://github.com/ShadowFoxNixill");
+    } else if (hname == "twitch.nixill.net") {
+      redir("https://twitch.tv/ShadowFoxNixill");
+    } else if (hname == "twitter.nxsbus.org") {
+      redir("https://twitter.com/NXSBusDetroit");
+    } else if (hname == "github.nxsbus.org") {
+      redir("https://github.com/NXS-Detroit");
+    } else {
+      print("The script ran, but the hostname was wrong.");
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+    <h1>Hi there!</h1>
+    <h2>Well, this is awkward...</h2>
+    <p>I don&apos;t really have much of a website to speak of right now, so this page is supposed to redirect you based
+      on the url you used to land here. If you&apos;re seeing this, you probably didn&apos;t come from a redirect url,
+      or you have
+      JavaScript turned off.</p>
+    <p>In either case, this webpage currently supports the following redirects:</p>
+    <ul>
+      <li><strong>nixill.net links:</strong>
+        <ul>
+          <li><a href="http://twitch.nixill.net/">twitch</a> redirects to <a href="https://twitch.tv/ShadowFoxNixill">my
+              Twitch (ShadowFoxNixill)</a></li>
+          <li><a href="http://twitter.nixill.net/">twitter</a> redirects to <a
+              href="https://twitter.com/ShadowFoxNixill">my Twitter (@ShadowFoxNixill)</a></li>
+          <li><a href="http://github.nixill.net/">github</a> redirects to <a
+              href="https://github.com/ShadowFoxNixill">my GitHub (ShadowFoxNixill)</a></li>
+        </ul>
+      </li>
+      <li>
+        <strong>nxsbus.org links:</strong>
+        <ul>
+          <li>These links are for information about a fake bus system that I&apos;ve been developing since 2015.</li>
+          <li><a href="http://github.nxsbus.org/">github.nxsbus.org</a> redirects to <a
+              href="https://github.com/NXS-Detroit">its GitHub account (NXS-Detroit)</a></li>
+          <li><a href="http://twitter.nxsbus.org/">twitter</a> redirects to <a
+              href="https://twitter.com/NXSBusDetroit">its Twitter account (@NXSBusDetroit)</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
